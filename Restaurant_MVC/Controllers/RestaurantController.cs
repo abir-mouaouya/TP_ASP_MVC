@@ -30,7 +30,11 @@ namespace Restaurant_MVC.Controllers
                     Name= "Macdo",
                     Location = "Maroc",
                     Cuisine ="france",
-                } 
+                    Cuisines = new List<Cuisine> {
+                        new Cuisine { Id = 1, Name = "Française"},
+                        new Cuisine { Id = 2, Name = "Marocaine" }},
+
+                }
       };
 
         [Route("/")]
