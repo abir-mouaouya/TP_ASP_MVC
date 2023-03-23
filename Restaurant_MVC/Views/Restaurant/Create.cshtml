@@ -35,12 +35,6 @@
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
-            <select asp-for="Cuisines" name="Cuisines">
-                @foreach (var item in (List<Cuisine>)ViewBag.Cuisines)
-                                {
-                                    <option value="@item.Name">@item.Name</option>
-                                }
-            </select>
         </form>
     </div>
 </div>
